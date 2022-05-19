@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.sipna_logo {
+    height: 60px;
+    background-size: contain;
+}
+
+.phoneEmail {
+    font-size: 13px;
+    padding: 15px;
+    color: black;
+}
