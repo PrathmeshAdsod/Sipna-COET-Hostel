@@ -1,0 +1,26 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Fira+Sans&family=Hubballi&family=Inconsolata&family=Lora:ital@1&family=Montserrat:ital,wght@1,900&family=Noto+Sans:wght@600&family=Open+Sans:ital,wght@1,300;1,400&family=Roboto:wght@300&family=Rock+Salt&family=Sansita+Swashed:wght@300&display=swap');
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-footer-line {
+    font-family: 'Noto Sans', sans-serif;
+    max-width: 300px;
+    text-align: center;
+}
+footer {
+    background-color: rgb(42, 36, 36);
+    color: wheat;
+}
+p {
+    padding: 10px;
+}

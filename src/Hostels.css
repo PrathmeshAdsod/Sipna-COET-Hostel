@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Fira+Sans&family=Hubballi&family=Inconsolata&family=Lora:ital@1&family=Montserrat:ital,wght@1,900&family=Noto+Sans:wght@600&family=Open+Sans:ital,wght@1,300;1,400&family=Roboto:wght@300&family=Rock+Salt&family=Sansita+Swashed:wght@300&display=swap');
+
+
+.heading {
+    margin: 90px 0 0 15px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.images_block {
+    margin: 40px 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hostel_image {
+    height: 320px;
+    width: 220px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 1s;
+    flex-wrap: wrap;
+}
+.hostel_image:hover {
+    transform: scale(1.04);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border-radius: 5px;
+}
+.hostel_name {
+    padding: 15px 0;
+    font-size: larger;
+}
+.laxmibai {
+    object-position: 75% 25%;
+}
+.ahilyabai {
+    object-position: 75% 25%;
+}
+.savitribai {
+    object-position: 30% 70%;
+}
+.hostel-D {
+    object-position: 55% 25%;
+}
+
+@media only screen and (max-width: 993px) {
+    .images_block {
+        display: flex;
+        justify-content: space-between;
+    }
+    .hostel_image {
+        height: 250px;
+        width: 150px;
+    }
+    .hostel_name {
+        font-size: medium;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .images_block {
+        flex-direction: column;
+    }
+    .hostel_image {
+        width: 100%;
+        height: 200px;
+    }
+}

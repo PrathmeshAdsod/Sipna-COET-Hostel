@@ -58,16 +58,34 @@
 
 @media only screen and (max-width: 1080px) {
     .image {display: none;}
+    .buttons {
+          margin: 20px 40%;
+    }
+}
+@media only screen and (max-width: 661px) {
+    .header {
+        margin: 20px 15px;
+    }
+    .buttons{
+        flex-direction: column;
+        margin: 20px 35%;
+    }
+    .buttons button {
+        margin: 5px auto;
+        width: 150px;
+    }
 }
 
-
-@media only screen and (max-width: 690px) {
+@media only screen and (max-width: 500px) {
+    .header {
+        margin: 10px 5px;
+    }
     .header_content {
         display: none;
     }
     .buttons{
         flex-direction: column;
-        margin: 20px;
+        margin: 20px 30%;
     }
     .buttons button {
         margin: 5px auto;
