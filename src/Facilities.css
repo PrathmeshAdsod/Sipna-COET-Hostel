@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Comforter&family=Fira+Sans&family=Hubballi&family=Inconsolata&family=Lora:ital@1&family=Montserrat:ital,wght@1,900&family=Noto+Sans:wght@600&family=Open+Sans:ital,wght@1,300;1,400&family=Roboto:wght@300&family=Rock+Salt&family=Sansita+Swashed:wght@300&display=swap');
+
+.facility-header {
+    letter-spacing: 5px;
+    margin: 50px 0 0 120px;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.facility-card {
+    margin: 50px 120px 0 120px;
+    background-color: #F6FAFD;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.facility-card  p{
+    text-align: center;
+}
+
+
+@media only screen and (max-width: 700px) {
+    .facility-card {
+        margin: 50px 25px 0 25px;
+    }
+}

@@ -23,6 +23,7 @@
     cursor: pointer;
     transition: all 1s;
     flex-wrap: wrap;
+    
 }
 .hostel_image:hover {
     transform: scale(1.04);

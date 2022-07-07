@@ -4,6 +4,7 @@ import Hostels from "./Hostels";
 import Navbar from "./Navbar";
 import Components from "./Components";
 import Footer from "./Footer";
+import Facilities from "./Facilities";
 
 function App() {
   const roomsContent =
@@ -35,7 +36,7 @@ function App() {
         id="component-mess"
         heading="Mess"
       />
-
+      <Facilities />
       <Footer />
     </>
   );
