@@ -36,16 +36,17 @@
     margin-right: 20px;
     border: none;
     width: 120px;
-    background-color: #F64C72;
+   /* background-color: #F64C72;*/
+    background-color: #41B3A3;
     color: #F6FAFD;
     font-family: 'Noto Sans', sans-serif;
     transition: all 0.4s;
 }
 .buttons button:hover {
     transform: scale(1.08);
-    background-color: white;
+   /* background-color: white;*/
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    color: black;
+    /*color: black;*/
 }
 
 .image {

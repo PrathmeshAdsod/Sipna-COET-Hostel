@@ -1,7 +1,14 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Hostels.css";
 
 const Hostels = () => {
+  const [hostel, setHostel] = useState({
+    hostel1: true,
+    hostel2: true,
+    hostel3: true,
+    hostel4: true,
+  });
+
   return (
     <>
       <div className="hostels_block container">
@@ -13,39 +20,137 @@ const Hostels = () => {
 
         <div className="images_block container" data-aos="fade-out">
           <div>
-            <img
-              className="hostel_image laxmibai"
-              src="/raniLaxmibai.jpg"
-              alt="hostel"
-            />
-            <h4 className="hostel_name">Rani Laxmibai</h4>
+            {hostel.hostel1 ? (
+              <img
+                className="hostel_image laxmibai"
+                src="/raniLaxmibai.jpg"
+                alt="hostel"
+              />
+            ) : (
+              <div className="extra-hostel-info">
+                <h5>Incharge</h5>
+                <h6>Ms.A.B Parandekar</h6>
+                <h5>Worker</h5>
+                <h6>Ms.S.R Lawankar</h6>
+              </div>
+            )}
+            <h4 className="hostel_name">
+              Rani Laxmibai <br /> Girls Hostel
+            </h4>
+            <button
+              onClick={() =>
+                setHostel({
+                  hostel1: !hostel.hostel1,
+                  hostel2: true,
+                  hostel3: true,
+                  hostel4: true,
+                })
+              }
+              className="more_btn"
+            >
+              More
+            </button>
           </div>
 
           <div>
-            <img
-              className="hostel_image ahilyabai"
-              src="/AhilyabaiHolkar.jpg"
-              alt="hostel"
-            />
-            <h4 className="hostel_name">Ahilyabai Holkar</h4>
+            {hostel.hostel2 ? (
+              <img
+                className="hostel_image ahilyabai"
+                src="/AhilyabaiHolkar.jpg"
+                alt="hostel"
+              />
+            ) : (
+              <div className="extra-hostel-info">
+                <h5>Incharge</h5>
+                <h6>Dr.N.D Sahu</h6>
+                <h5>Worker</h5>
+                <h6>Ms.J.S Bhagawat</h6>
+              </div>
+            )}
+            <h4 className="hostel_name">
+              Punyshlok Ahilyabai Girls <br />
+              Hostel
+            </h4>
+            <button
+              onClick={() =>
+                setHostel({
+                  hostel1: true,
+                  hostel2: !hostel.hostel2,
+                  hostel3: true,
+                  hostel4: true,
+                })
+              }
+              className="more_btn"
+            >
+              More
+            </button>
           </div>
 
           <div>
-            <img
-              className="hostel_image savitribai"
-              src="/SavitribaiPhule.jpg"
-              alt="hostel"
-            />
-            <h4 className="hostel_name">Savitribai Phule</h4>
+            {hostel.hostel3 ? (
+              <img
+                className="hostel_image savitribai"
+                src="/SavitribaiPhule.jpg"
+                alt="hostel"
+              />
+            ) : (
+              <div className="extra-hostel-info">
+                <h5>Incharge</h5>
+                <h6>Ms.P.C Khanzode</h6>
+                <h5>Worker</h5>
+                <h6>Ms.J.S Dudhkawale</h6>
+              </div>
+            )}
+            <h4 className="hostel_name">
+              Krantijoti Savitribai Phule <br /> Girls Hostel
+            </h4>
+            <button
+              onClick={() =>
+                setHostel({
+                  hostel1: true,
+                  hostel2: true,
+                  hostel3: !hostel.hostel3,
+                  hostel4: true,
+                })
+              }
+              className="more_btn"
+            >
+              More
+            </button>
           </div>
 
           <div>
-            <img
-              className="hostel_image hostel-D"
-              src="/campus.jpg"
-              alt="hostel"
-            />
-            <h4 className="hostel_name">Hostel D</h4>
+            {hostel.hostel4 ? (
+              <img
+                className="hostel_image hostel-D"
+                src="/campus.jpg"
+                alt="hostel"
+              />
+            ) : (
+              <div className="extra-hostel-info">
+                <h5>Incharge</h5>
+                <h6>Dr.S.M Seikdar</h6>
+                <h5>Worker</h5>
+                <h6>Ms.R.V Tanpure</h6>
+              </div>
+            )}
+            <h4 className="hostel_name">
+              Rajmata Jijabai <br />
+              Girls Hostel
+            </h4>
+            <button
+              onClick={() =>
+                setHostel({
+                  hostel1: true,
+                  hostel2: true,
+                  hostel3: true,
+                  hostel4: !hostel.hostel4,
+                })
+              }
+              className="more_btn"
+            >
+              More
+            </button>
           </div>
         </div>
       </div>
