@@ -4,7 +4,6 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Comforter&family=Fira+Sans&family=Hubballi&family=Inconsolata&family=Lora:ital@1&family=Montserrat:ital,wght@1,900&family=Noto+Sans:wght@600&family=Open+Sans:ital,wght@1,300;1,400&family=Roboto:wght@300&family=Rock+Salt&family=Sansita+Swashed:wght@300&display=swap');
 
-
 .compo_heading {
     margin: 30px 0 50px 125px;
     letter-spacing: 5px;
@@ -16,27 +15,19 @@
     display: flex;
    
 }
-.imgAndText p {
-    margin: 5px;
-    font-family: 'Open Sans', sans-serif;
+.imgAndText  .details {
     font-style: unset;
-    font-weight: 500;
-    background-color: #F6FAFD;
+   /* background-color: #a5c6dd;*/
     cursor: pointer;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-}
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
+}/*F6FAFD*/
 
 
 .details {
+    margin-left: 10px ;
     padding: 0 20px 20px 20px;
 }
 
-.otherImages {
-    margin: 0 5px 5px 120px;
-    display: flex;
-    justify-content: center;
-    object-fit: cover;
-}
 img {
     transition: all 1s;
     border-radius: 3px;
@@ -46,43 +37,32 @@ img:hover {
     cursor: pointer;
 }
 
-.otherImages .extra-img {
-    margin: 5px 10px 20px 0;
-    object-fit: cover;
-}
 
 @media only screen and (max-width: 993px) {
+    .imgAndText {
+        display: flex;
+        flex-direction: column;
+    }
     .imgAndText img {
-        display: none;
+        padding-left: 20px;
+        padding-right: 20px;
     }
-    .otherImages {
-        flex-direction: row;
-    }
-    .otherImages img {
-        height: 200px;
-        width: 200px;
+    .imgAndText .details {
+        width: 100%;
     }
 }
 
 @media only screen and (max-width: 712px) {
-    .otherImages img{
-        width: 160;
-        height: 160px;
-    }
-}
-
-
-@media only screen and (max-width: 488px) {
-
     .imgAndText {
-        margin: 0 5px 5px 20px;
-    }
-    .otherImages {
-       flex-direction: column;
-       margin: 0 20px 0 20px;
-    }
-    .otherImages img {
+        display: flex;
+        flex-direction: column;
         width: 100%;
+        margin-left: 0;
+    }
+    .imgAndText .details {
+        margin-top: -20px;
     }
 }
+
+
 

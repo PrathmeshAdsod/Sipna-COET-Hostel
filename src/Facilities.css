@@ -13,11 +13,18 @@
 
 .facility-card {
     margin: 50px 120px 0 120px;
-    background-color: #F6FAFD;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+   /* background-color: #a5c6dd;*/
+  /*  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;*/
 }
 .facility-card  p{
     text-align: center;
+}
+
+.facility-carousel {
+    display: block;
+    height: 300px;
+    width: 400px;
+    margin: 10px auto;
 }
 
 
@@ -25,4 +32,10 @@
     .facility-card {
         margin: 50px 25px 0 25px;
     }
+    .facility-carousel {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 350px;
+    }
 }
+

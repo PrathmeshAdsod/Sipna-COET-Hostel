@@ -1,14 +1,16 @@
 import React from "react";
 import "./Facilities.css";
+import Card from "react-bootstrap/Card";
+import Carousal from "./Carousal";
 
-function Facilities() {
+function Facilities(props) {
   return (
     <>
       <h3 id="component-facilities" className="facility-header">
         Facilities
       </h3>
 
-      <div className="facility-card">
+      <Card body className="facility-card">
         <p>
           For pure drinking water, water cooler with aqua guard is installed on
           the ground floor and second floor.
@@ -43,6 +45,14 @@ function Facilities() {
           For any emergency an ambulance is available with all the necessary
           medical equipment.
         </p>
+      </Card>
+      <div className="facility-carousel">
+        <Carousal
+          imgsrc1={props.imgsrc1}
+          imgsrc2={props.imgsrc2}
+          imgsrc3={props.imgsrc3}
+          imgsrc4={props.imgsrc4}
+        />
       </div>
     </>
   );

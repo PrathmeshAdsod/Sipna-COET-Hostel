@@ -18,8 +18,9 @@
     text-align: center;
 }
 footer {
-    background-color: rgb(42, 36, 36);
-    color: wheat;
+    margin-top: -80px;
+    background-color: #a5c6dd;
+    color: rgb(0, 0, 0);
 }
 p {
     padding: 10px;

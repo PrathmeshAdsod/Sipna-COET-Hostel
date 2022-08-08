@@ -1,5 +1,7 @@
 import React from "react";
+import Carousal from "./Carousal";
 import "./Components.css";
+import Card from "react-bootstrap/Card";
 
 function Components(props) {
   return (
@@ -8,38 +10,16 @@ function Components(props) {
         {props.heading}
       </h3>
       <div className="imgAndText" data-aos="fade-out">
-        <img
-          className="mainImage"
-          src={props.imgsrc1}
-          height="200px"
-          width="500px"
-          alt="images appear here"
+        <Carousal
+          imgsrc1={props.imgsrc1}
+          imgsrc2={props.imgsrc2}
+          imgsrc3={props.imgsrc3}
+          imgsrc4={props.imgsrc4}
         />
-        <p className="details">{props.content}</p>
-      </div>
-
-      <div className="otherImages" data-aos="fade-in">
-        <img
-          className="extra-img"
-          src={props.imgsrc2}
-          height="200px"
-          width="400px"
-          alt="images appear here"
-        />
-        <img
-          className="extra-img"
-          src={props.imgsrc3}
-          height="200px"
-          width="400px"
-          alt="images appear here"
-        />
-        <img
-          className="extra-img"
-          src={props.imgsrc4}
-          height="200px"
-          width="400px"
-          alt="images appear here"
-        />
+        <br />
+        <Card body className="details">
+          {props.content}
+        </Card>
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Header.css";
 
-function Header() {
+function Header(props) {
   return (
     <>
       <div className="banner">
@@ -37,7 +37,7 @@ function Header() {
           </div>
         </div>
         <div className="main_image">
-          <img className="image" src="/campus.jpg" alt="img" />
+          <img className="image" src="/girls1.jpg" alt="img" />
         </div>
       </div>
     </>

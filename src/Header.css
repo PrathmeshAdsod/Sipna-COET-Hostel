@@ -58,7 +58,13 @@
 
 
 @media only screen and (max-width: 1080px) {
-    .image {display: none;}
+    .banner  {
+        flex-direction: column-reverse;
+    }
+    .image {
+        height: 120px;
+        width: 100%;
+    }
     .buttons {
           margin: 20px 40%;
     }

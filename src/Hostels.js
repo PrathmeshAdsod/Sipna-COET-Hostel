@@ -48,7 +48,7 @@ const Hostels = () => {
               }
               className="more_btn"
             >
-              More
+              about
             </button>
           </div>
 
@@ -82,7 +82,7 @@ const Hostels = () => {
               }
               className="more_btn"
             >
-              More
+              about
             </button>
           </div>
 
@@ -115,7 +115,7 @@ const Hostels = () => {
               }
               className="more_btn"
             >
-              More
+              about
             </button>
           </div>
 
@@ -149,7 +149,7 @@ const Hostels = () => {
               }
               className="more_btn"
             >
-              More
+              about
             </button>
           </div>
         </div>
